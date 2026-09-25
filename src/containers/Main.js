@@ -56,9 +56,9 @@ const Main = () => {
             <Projects />
             <StartupProject />
             <Achievement />
-            {/* <CvSection sectionKey="scholarships" id="scholarships" /> */}           
+            {/* <CvSection sectionKey="scholarships" id="scholarships" /> */}
             <Skills />
-            <CvSection sectionKey="languages" id="languages" />             
+            <CvSection sectionKey="languages" id="languages" />
             <StackProgress />
             {/* <CvSection
               sectionKey="researchExperience"
