@@ -1,27 +1,36 @@
-import React, {useState, useContext} from "react";
-import emoji from "react-easy-emoji";
-import StyleContext from "../../contexts/StyleContext";
+import React from "react";
+import {useLanguage} from "../../contexts/LanguageContext";
 import "./ToggleSwitch.scss";
 
-const ToggleSwitch = () => {
-  const {isDark} = useContext(StyleContext);
-  const [isChecked, setChecked] = useState(isDark);
-  const styleContext = useContext(StyleContext);
-
+export default function LanguageToggle() {
+  const {language, setLanguage} = useLanguage();
   return (
-    <label className="switch">
-      <input
-        type="checkbox"
-        checked={isDark}
-        onChange={() => {
-          styleContext.changeTheme();
-          setChecked(!isChecked);
-        }}
-      />
-      <span className="slider round">
-        <span className="emoji">{isChecked ? emoji("🌜") : emoji("☀️")}</span>
+    <div
+      className="language-selector"
+      role="group"
+      aria-labelledby="language-title"
+    >
+      <span id="language-title" className="language-title">
+        Language / 언어
       </span>
-    </label>
+      <div className="language-options">
+        <button
+          type="button"
+          lang="en"
+          aria-pressed={language === "en"}
+          onClick={() => setLanguage("en")}
+        >
+          English
+        </button>
+        <button
+          type="button"
+          lang="ko"
+          aria-pressed={language === "ko"}
+          onClick={() => setLanguage("ko")}
+        >
+          한국어
+        </button>
+      </div>
+    </div>
   );
-};
-export default ToggleSwitch;
+}

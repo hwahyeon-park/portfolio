@@ -1,10 +1,11 @@
 import React, {useContext} from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
-import {achievementSection} from "../../portfolio";
+import usePortfolio from "../../i18n/usePortfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Achievement() {
+  const {achievementSection} = usePortfolio();
   const {isDark} = useContext(StyleContext);
   if (!achievementSection.display) {
     return null;
@@ -42,6 +43,7 @@ export default function Achievement() {
                   cardInfo={{
                     title: card.title,
                     description: card.subtitle,
+                    description2: card.subtitle2,
                     image: card.image,
                     imageAlt: card.imageAlt,
                     footer: card.footerLink

@@ -1,0 +1,354 @@
+{
+  "greeting": {
+    "username": "Hwahyeon Park",
+    "title": "Hi, I’m Hwahyeon Park.",
+    "subTitle": "Embedded & IoT Software Engineer",
+    "subTitle2": "I build IoT systems that connect embedded devices with cloud services, drawing on over two years of professional experience. I have developed ESP32/STM32 firmware and AWS services for a platform designed to support more than 300 devices reporting telemetry at 15-second intervals.",
+    "subTitle3": "I am currently completing an MSc in Embedded Systems and Internet of Things at Newcastle University. My dissertation validated relationships between indoor environmental sensors through public-dataset analysis and experiments using Raspberry Pi, ESP32 and Azure IoT.",
+    "displayGreeting": true
+  },
+  "workExperiences": {
+    "display": true,
+    "experience": [
+      {
+        "id": "lenif",
+        "company": "Lenif",
+        "role": "Software Engineer",
+        "date": "March 2022 – May 2024",
+        "desc": "Seoul, South Korea · Full-time",
+        "descBullets": [
+          "Built an end-to-end IoT platform from the ground up as one of two software engineers, connecting embedded devices with an AWS architecture designed to support more than 300 devices reporting telemetry at 15-second intervals.",
+          "Developed firmware for ESP32/FreeRTOS and STM32 devices, implementing BLE, Wi-Fi, MQTT, OTA updates and SPI communication.",
+          "Built gRPC and REST services for device management and telemetry using AWS IoT Core, Lambda, EC2, DynamoDB and RDS, and migrated the platform from Azure to AWS.",
+          "Resolved integration issues by tracing device behaviour across firmware, BLE/MQTT and AWS, coordinating fixes with teammates and external vendors."
+        ]
+      },
+      {
+        "id": "swu",
+        "company": "Seoul Women’s University",
+        "role": "Researcher",
+        "date": "August 2021 – February 2022",
+        "desc": "Seoul, South Korea · Full-time",
+        "descBullets": [
+          "Designed and tested a System Entity Structure (SES)-based security framework for autonomous-vehicle IoT environments.",
+          "Developed an IoT encryption library and presented the findings at AsiaSim 2021."
+        ]
+      },
+      {
+        "id": "brframe",
+        "company": "BRFrame",
+        "role": "Program Developer & Data Analyst",
+        "date": "July 2019 – February 2020",
+        "desc": "Seoul, South Korea · Internship",
+        "descBullets": [
+          "Integrated edge-computing platforms, including Raspberry Pi, NVIDIA Jetson and the Microsoft Vision AI Developer Kit, with Azure IoT for cloud-based sensor data collection.",
+          "Analysed Azure Kinect DK skeletal-tracking data to evaluate its suitability for machine-learning applications."
+        ]
+      }
+    ]
+  },
+  "extraExperience": {
+    "title": "Additional Experience",
+    "items": [
+      {
+        "id": "lifeengine",
+        "title": "Life Engine — Technical Developer",
+        "subtitle": "March 2025 – June 2025 · Seoul, South Korea · Contractor",
+        "bullets": [
+          "Developed Python-based web crawling and data-collection tools.",
+          "Automated recurring workflows with GitHub Actions and configured HTTPS for secure deployment."
+        ],
+        "logoId": "lifeengine"
+      },
+      {
+        "id": "swu",
+        "title": "Seoul Women’s University, Department of Information Security — Undergraduate Researcher",
+        "subtitle": "June 2018 – May 2020",
+        "bullets": [
+          "Developed an Android Things encryption library to secure IoT sensor data.",
+          "Built a Raspberry Pi security prototype integrating camera, PIR and fingerprint sensors for sensor-driven automation and access control."
+        ],
+        "logoId": "swu"
+      },    
+      {
+        "id": "swu",
+        "title": "Seoul Women’s University — Develop & Deploy (D&D) Advisor",
+        "subtitle": "July 2018 – June 2019 / April 2020 – July 2020",
+        "bullets": [
+          "Provided coding guidance and troubleshooting support to undergraduate students working on extracurricular technology projects."
+        ],
+        "logoId": "swu"
+      }
+    ]
+  },
+  "educationInfo": {
+    "display": true,
+    "schools": [
+      {
+        "id": "newcastle",
+        "schoolName": "Newcastle University",
+        "subHeader": "MSc Embedded Systems and Internet of Things",
+        "subHeader2": "",
+        "duration": "September 2025 – September 2026 (expected) · Newcastle upon Tyne, United Kingdom",
+        "descBullets": [
+          "Completed a dissertation validating relationships between indoor environmental sensors.",
+          "Conducted public-dataset analysis and controlled experiments using Raspberry Pi, ESP32 and Azure IoT.",
+          "Examined sensor validation and data quality, including how environmental conditions and cross-sensitivity affect real-world IoT measurements."
+        ]
+      },
+      {
+        "id": "swu",
+        "schoolName": "Seoul Women’s University",
+        "subHeader": "Bachelor of Engineering in Information Security",
+        "subHeader2": "Bachelor of Arts in Chinese Language & Literature (double major)",
+        "duration": "March 2016 – August 2021 · Seoul, South Korea",
+        "descBullets": [
+          "Developed an Android Things encryption library to secure IoT sensor data as an undergraduate researcher.",
+          "Built a Raspberry Pi-based security prototype integrating camera, PIR and fingerprint sensors for sensor-driven automation and access control.",
+          "Received multiple academic scholarships, including the SW-Centered scholarship, in recognition of academic achievement."
+        ]
+      }
+    ]
+  },  
+  "bigProjects": {
+    "title": "Projects",
+    "subtitle": "Firmware, cloud services, sensor data and automation",
+    "display": true,
+    "projects": [
+      {
+        "id": "firmware",
+        "projectName": "Embedded Firmware and Device Communication",
+        "context": "Lenif",
+        "projectDesc": "Developed ESP32/FreeRTOS and STM32 firmware with BLE, Wi-Fi, MQTT, SPI communication and OTA updates. Investigated device integration issues by tracing behaviour from firmware and communication layers through to cloud services.",
+        "technologies": "ESP32 · STM32 · FreeRTOS · BLE · Wi-Fi · MQTT · SPI · OTA"
+      },
+      {
+        "id": "aws",
+        "projectName": "AWS IoT Backend and Cloud Migration",
+        "context": "Lenif",
+        "projectDesc": "Built gRPC and REST services for device management and telemetry, and migrated the platform from Azure to AWS. Contributed to an IoT architecture designed to support more than 300 devices reporting data at 15-second intervals.",
+        "technologies": "AWS IoT Core · Lambda · EC2 · DynamoDB · RDS · gRPC · REST"
+      },
+      {
+        "id": "automation",
+        "projectName": "Automated Data Collection and Workflows",
+        "context": "Life Engine",
+        "projectDesc": "Developed Python-based web crawling and data-collection tools, automated recurring workflows with GitHub Actions, and configured HTTPS for deployment.",
+        "technologies": "Python · Web crawling · GitHub Actions · HTTPS"
+      }
+    ]
+  },
+  "skillsSection": {
+    "display": true,
+    "softwareSkills": [
+      {
+        "title": "Programming",
+        "skills": [
+          {
+            "skillName": "C"
+          },
+          {
+            "skillName": "Python"
+          },
+          {
+            "skillName": "Java"
+          },
+          {
+            "skillName": "SQL"
+          }
+        ]
+      },
+      {
+        "title": "Embedded platforms",
+        "skills": [
+          {
+            "skillName": "ESP32"
+          },
+          {
+            "skillName": "STM32"
+          },
+          {
+            "skillName": "FreeRTOS"
+          },
+          {
+            "skillName": "Raspberry Pi"
+          },
+          {
+            "skillName": "Arduino"
+          }
+        ]
+      },
+      {
+        "title": "Communication & updates",
+        "skills": [
+          {
+            "skillName": "BLE"
+          },
+          {
+            "skillName": "Wi-Fi"
+          },
+          {
+            "skillName": "MQTT"
+          },
+          {
+            "skillName": "SPI"
+          },
+          {
+            "skillName": "OTA"
+          }
+        ]
+      },
+      {
+        "title": "Cloud & backend",
+        "skills": [
+          {
+            "skillName": "AWS IoT Core"
+          },
+          {
+            "skillName": "Lambda"
+          },
+          {
+            "skillName": "EC2"
+          },
+          {
+            "skillName": "DynamoDB"
+          },
+          {
+            "skillName": "RDS"
+          },
+          {
+            "skillName": "Azure IoT"
+          },
+          {
+            "skillName": "gRPC"
+          },
+          {
+            "skillName": "REST"
+          },
+          {
+            "skillName": "Datadog"
+          }
+        ]
+      },
+      {
+        "title": "Automation & deployment",
+        "skills": [
+          {
+            "skillName": "Python web crawling and data collection"
+          },
+          {
+            "skillName": "GitHub Actions"
+          },
+          {
+            "skillName": "HTTPS"
+          }
+        ]
+      },
+      {
+        "title": "Security",
+        "skills": [
+          {
+            "skillName": "IoT security"
+          },
+          {
+            "skillName": "data encryption"
+          },
+          {
+            "skillName": "secure communication protocols"
+          }
+        ]
+      },
+      {
+        "title": "Sensors & data",
+        "skills": [
+          {
+            "skillName": "CO₂"
+          },
+          {
+            "skillName": "PM and VOC environmental sensors"
+          },
+          {
+            "skillName": "sensor validation"
+          },
+          {
+            "skillName": "data quality"
+          },
+          {
+            "skillName": "analysis of environmental effects and cross-sensitivity"
+          }
+        ]
+      }
+    ]
+  },
+  "researchExperience": {
+    "title": "Research Experience",
+    "items": [
+      {
+        "title": "Seoul Women’s University, Department of Information Security — Undergraduate Researcher",
+        "subtitle": "June 2018 – May 2020",
+        "bullets": [
+          "Developed an Android Things encryption library to secure IoT sensor data.",
+          "Built a Raspberry Pi security prototype integrating camera, PIR and fingerprint sensors for sensor-driven automation and access control."
+        ],
+        "logoId": "swu"
+      }
+    ]
+  },
+  "achievementSection": {
+    "display": true,
+    "title": "Research & Publications",
+    "subtitle": "MSc dissertation, publications and conference presentations",
+    "achievementsCards": [
+      {
+        "id": "dissertation",
+        "title": "Three-Tier Validation of Indoor Environmental Sensor Relationships",
+        "subtitle": "MSc dissertation · Newcastle University",
+        "subtitle2": "Validated relationships between indoor environmental sensors through public-dataset analysis and controlled experiments. Used Raspberry Pi, ESP32 and Azure IoT to explore how environmental conditions and sensor cross-sensitivity affect measurements. \n\nSensor validation · Data quality · Environmental sensors · Raspberry Pi · ESP32 · Azure IoT"
+      },
+      {
+        "id": "ses",
+        "title": "SES-Based Security for Autonomous Vehicle Control",
+        "subtitle": "Designed and tested a System Entity Structure-based security framework for autonomous-vehicle IoT environments. Presented the findings at AsiaSim 2021; the related paper was published by Springer in 2022.",
+        "subtitle2": "Paper: “A Study on SES-Based Information Security Framework for Autonomous Vehicle Controlling Environment.”\n\nAuthors: Hyung-Jong Kim and Hwahyeon Park.\n\nPublication: Methods and Applications for Modeling and Simulation of Complex Systems, Communications in Computer and Information Science, vol. 1636, 2022, pp. 68–73.\n\nDOI: 10.1007/978-981-19-6857-0_7"
+      },
+      {
+        "id": "seed",
+        "title": "Secure Android Things Communication Using SEED",
+        "subtitle": "Developed an Android Things encryption library to protect IoT sensor data. The related paper was published in the Journal of the Korea Society for Simulation in 2019.",
+        "subtitle2": "Paper: “A Study on the Secure Communication at Android Things Environment Using the SEED Library.”\n\nAuthors: Hwa Hyeon Park, Mi Kyung Yoon, Hyeon Ju Lee, Hae Young Lee and Hyung-Jong Kim.\n\nPublication: Journal of the Korea Society for Simulation, vol. 28, no. 4, 2019, pp. 67–74.\n\nDOI: 10.9709/JKSS.2019.28.4.067"
+      },
+      {
+        "id": "iss",
+        "title": "IoT-Based Space Security Solution",
+        "subtitle": "Built a Raspberry Pi security prototype integrating camera, PIR and fingerprint sensors for automation and access control.",
+        "subtitle2": "Presentation: “IoT-Based Space Security Solution.”\n\nAuthors: Suji Kim, Hwahyeon Park and Minseok Oh.\n\nConference/poster presentation: ICCT 2018 · July 2018 · Shaoxing, China"
+      }
+    ]
+  },
+  "scholarships": {
+    "title": "Scholarships",
+    "items": [
+      {
+        "title": "Vice-Chancellor’s International Scholarship 2025",
+        "subtitle": "Newcastle University · £7,000",
+        "description": "Awarded on the basis of academic achievement and postgraduate application performance.",
+        "logoId": "newcastle"
+      },
+      {
+        "title": "Academic Scholarships — Seoul Women’s University",
+        "subtitle": "",
+        "description": "Received multiple academic scholarships, including the SW-Centered scholarship.",
+        "logoId": "swu"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "description": "🇰🇷 Korean: Native · 🇬🇧 English: Fluent · 🇨🇳 Chinese: Advanced"
+  },
+  "contactInfo": {
+    "title": "Get in Touch",
+    "subtitle": "Feel free to contact me about opportunities or projects in embedded software, IoT, cloud integration and sensor data.",
+    "email_address": "hwahyeonp25@gmail.com"
+  }
+}

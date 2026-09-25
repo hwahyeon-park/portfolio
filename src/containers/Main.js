@@ -1,3 +1,4 @@
+import CvSection from "../components/cvSection/CvSection";
 import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
@@ -18,12 +19,10 @@ import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
-import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 
 const Main = () => {
-  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+  const isDark = false;
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
 
@@ -39,26 +38,33 @@ const Main = () => {
     }
   }, []);
 
-  const changeTheme = () => {
-    setIsDark(!isDark);
-  };
-
   return (
-    <div className={isDark ? "dark-mode" : null}>
-      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
+    <div className={isDark ? "dark-mode" : "light-mode"}>
+      <StyleProvider value={{isDark}}>
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
         ) : (
           <>
             <Header />
             <Greeting />
-            <Skills />
-            <StackProgress />
             <Education />
             <WorkExperience />
+            <CvSection
+              sectionKey="extraExperience"
+              id="additional-experience"
+            />
             <Projects />
             <StartupProject />
             <Achievement />
+            {/* <CvSection sectionKey="scholarships" id="scholarships" /> */}           
+            <Skills />
+            <CvSection sectionKey="languages" id="languages" />             
+            <StackProgress />
+            {/* <CvSection
+              sectionKey="researchExperience"
+              id="research-experience"
+            /> */}
+
             <Blogs />
             <Talks />
             <Twitter />

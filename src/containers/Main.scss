@@ -1,5 +1,12 @@
 @import "../_globalColor";
 
+.light-mode {
+  background-color: $lightBackground1;
+  color: $textColor;
+  color-scheme: light;
+  min-height: 100vh;
+}
+
 .dark-mode {
   background-color: $darkBackground;
   color: white;

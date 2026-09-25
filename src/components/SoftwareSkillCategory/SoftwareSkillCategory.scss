@@ -1,0 +1,27 @@
+.software-skill-category {
+  margin-bottom: 28px;
+}
+.category-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: inherit;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skill-tags li {
+  box-sizing: border-box;
+  max-width: 100%;
+  border: 1px solid #a99ab8;
+  border-radius: 8px;
+  padding: 9px 14px;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}

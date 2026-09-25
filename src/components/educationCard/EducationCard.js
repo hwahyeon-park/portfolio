@@ -9,7 +9,7 @@ export default function EducationCard({school}) {
   const GetDescBullets = ({descBullets}) => {
     return descBullets
       ? descBullets.map((item, i) => (
-          <li key={i} className="subTitle">
+          <li key={i}>
             {item}
           </li>
         ))
@@ -17,8 +17,6 @@ export default function EducationCard({school}) {
   };
   const {isDark} = useContext(StyleContext);
 
-  if (!school.logo)
-    console.error(`Image of ${school.name} is missing in education section`);
   return (
     <div>
       <Fade left duration={1000}>
@@ -46,6 +44,8 @@ export default function EducationCard({school}) {
                 }
               >
                 {school.subHeader}
+                <br />
+                {school.subHeader2}
               </h5>
               <p
                 className={`${

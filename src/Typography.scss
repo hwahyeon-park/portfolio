@@ -1,0 +1,106 @@
+/* Shared type scale for both languages. The greeting title keeps its own scale.
+   Scope these rules to the portfolio so legacy component styles cannot change
+   the size or leading of equivalent text in different sections. */
+.portfolio-typography {
+  --type-section: 40px;
+  --type-card: 22px;
+  --type-body: 18px;
+  --type-meta: 14px;
+
+  .education-heading,
+  .experience-heading,
+  .cv-heading,
+  .skills-heading,
+  .achievement-heading,
+  .contact-title {
+    font-size: var(--type-section);
+    line-height: 1.3;
+    font-weight: 400;
+  }
+
+  .education-text-school,
+  .experience-text-company,
+  .experience-text-role,
+  .cv-card h3,
+  .card-title,
+  .category-title {
+    font-size: var(--type-card);
+    line-height: 1.4;
+  }
+
+  .greeting-text-p,
+  .education-text-subHeader,
+  .education-text-desc,
+  .education-text-bullets li,
+  .experience-text-details li,
+  .cv-card p,
+  .cv-card li,
+  .cv-section > p,
+  .card-subtitle,
+  .project-subtitle,
+  .achievement-subtitle,
+  .contact-subtitle,
+  .contact-detail,
+  .contact-detail-email {
+    font-size: var(--type-body);
+    line-height: 1.65;
+  }
+
+  .education-text-duration,
+  .experience-text-date,
+  .experience-text-desc,
+  .cv-card .cv-meta,
+  .project-context,
+  .project-technologies {
+    font-size: var(--type-meta);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    --type-section: 30px;
+    --type-card: 20px;
+    --type-body: 16px;
+  }
+}
+
+/* Keep all written text black in the default light theme, including labels
+   that legacy components mark as subtitles. Image and icon colors stay intact. */
+.portfolio-typography .light-mode {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  a,
+  button,
+  span {
+    color: #000 !important;
+  }
+
+  .main-button,
+  .project-card-footer .project-tag,
+  .certificate-card-footer .certificate-tag,
+  .language-options button[aria-pressed="true"] {
+    background-color: #ede3f6;
+    border-color: #bda2d4;
+  }
+
+  .main-button:hover,
+  .project-card-footer .project-tag:hover,
+  .certificate-card-footer .certificate-tag:hover {
+    background-color: #dfcfed;
+  }
+
+  /* Company banners use colors sampled from logos; a light label background
+     keeps black company names readable against every banner. */
+  .experience-text-company {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    max-width: calc(100% - 3rem);
+    box-sizing: border-box;
+  }
+}

@@ -1,26 +1,20 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./SoftwareSkill.scss";
-import {skillsSection} from "../../portfolio";
+import StyleContext from "../../contexts/StyleContext";
+import usePortfolio from "../../i18n/usePortfolio";
 
 export default function SoftwareSkill() {
+  const {skillsSection} = usePortfolio();
+  const {isDark} = useContext(StyleContext);
+
   return (
-    <div>
-      <div className="software-skills-main-div">
-        <ul className="dev-icons">
-          {skillsSection.softwareSkills.map((skills, i) => {
-            return (
-              <li
-                key={i}
-                className="software-skill-inline"
-                name={skills.skillName}
-              >
-                <i className={skills.fontAwesomeClassname}></i>
-                <p>{skills.skillName}</p>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+    <div className="software-skills-div">
+      {skillsSection.softwareSkills.map((skill, i) => (
+        <div key={i} className="software-skill-icon">
+          <i className={skill.fontAwesomeClassname} aria-hidden="true" />
+          <p>{skill.skillName}</p>
+        </div>
+      ))}
     </div>
   );
 }

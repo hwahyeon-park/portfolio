@@ -1,83 +1,103 @@
 @import "../../_globalColor";
 
+/* Shared section styles retained for the rest of the portfolio. */
 .main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
+  margin: 4rem auto 0;
 }
-.greet-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
-}
-
-.greeting-main {
-  display: flex;
-}
-
 .subTitle {
   color: $subTitle !important;
 }
 
+.greet-main {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  margin: 2rem auto 0;
+  padding: 20px clamp(16px, 4vw, 56px);
+}
 .greeting-main {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  column-gap: clamp(24px, 4vw, 64px);
+  row-gap: 24px;
+  align-items: start;
 }
-
 .greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
+  min-width: 0;
 }
 
+/* The title has its own full-width row; the illustration cannot squeeze it. */
+.greet-main .greeting-text {
+  grid-column: 1 / -1;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0.08em 0;
+  font-size: clamp(1.875rem, 4.5vw, 4rem);
+  line-height: 1.25;
+  color: inherit;
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  overflow: visible;
+}
+.greeting-text-p {
+  margin: 0;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.7;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.greeting-image-div {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  justify-self: center;
+}
+.greeting-image-div > div {
+  width: 100%;
+  max-width: 100%;
+}
+.greeting-image-div svg,
+.greeting-image-div > img {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  height: auto !important;
+}
 .empty-div {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
-
 .button-greeting-div {
   display: flex;
-  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
 }
 .download-link-button {
   text-decoration: none;
 }
-
-.greeting-text {
-  font-size: 70px;
-  line-height: 1.1;
-  color: $textColor !important;
-}
-
-.greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
-}
-
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
-}
-
 .wave-emoji {
-  animation-duration: 1.8s;
-  animation-iteration-count: infinite;
-  animation-name: wave;
   display: inline-block;
+  animation: wave 1.8s infinite;
   transform-origin: 70% 70%;
 }
-
 @keyframes wave {
-  0% {
+  0%,
+  60%,
+  100% {
     transform: rotate(0deg);
   }
-  10% {
+  10%,
+  30% {
     transform: rotate(-10deg);
   }
   20% {
     transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
   }
   40% {
     transform: rotate(9deg);
@@ -85,43 +105,36 @@
   50% {
     transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(0deg);
-  }
 }
-
-/* Media Query */
-@media (max-width: 1380px) {
-  .greeting-text {
-    font-size: 50px;
-  }
-  .greeting-text-p {
-    font-size: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
+@media (max-width: 900px) {
   .greeting-main {
-    display: block;
+    grid-template-columns: minmax(0, 1fr);
   }
   .greeting-image-div {
-    height: 256px;
+    max-width: 340px;
   }
 }
-
+@media (max-width: 600px) {
+  .greet-main .greeting-text {
+    text-align: center;
+  }
+  .greeting-text-p {
+    text-align: center;
+  }
+  .button-greeting-div {
+    justify-content: center;
+  }
+  .greeting-image-div {
+    max-width: 280px;
+  }
+}
 @media (max-width: 320px) {
   .main {
     width: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wave-emoji {
+    animation: none;
   }
 }

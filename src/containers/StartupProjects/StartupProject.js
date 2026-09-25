@@ -1,18 +1,11 @@
 import React, {useContext} from "react";
 import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
+import usePortfolio from "../../i18n/usePortfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
-  function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
+  const {bigProjects} = usePortfolio();
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
@@ -53,6 +46,7 @@ export default function StartupProject() {
                     </div>
                   ) : null}
                   <div className="project-detail">
+                    <p className="project-context">{project.context}</p>
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}
                     >
@@ -65,19 +59,25 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
-                    {project.footerLink ? (
+                    <p className="project-technologies">
+                      {project.technologies}
+                    </p>
+                    {project.footerLink.length > 0 ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
                           return (
-                            <span
+                            <a
+                              href={link.url}
+                              hrefLang={link.language}
+                              target="_blank"
+                              rel="noopener noreferrer"
                               key={i}
                               className={
                                 isDark ? "dark-mode project-tag" : "project-tag"
                               }
-                              onClick={() => openUrlInNewTab(link.url)}
                             >
                               {link.name}
-                            </span>
+                            </a>
                           );
                         })}
                       </div>

@@ -1,7 +1,9 @@
+import usePortfolio from "../../i18n/usePortfolio";
 import React from "react";
 import "./Top.scss";
 
 export default function Top() {
+  const {ui} = usePortfolio();
   function TopEvent() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -25,7 +27,7 @@ export default function Top() {
   }; //To make sure that this button is not visible at starting.
   // When the user clicks on the button, scroll to the top of the document
   return (
-    <button onClick={TopEvent} id="topButton" title="Go to top">
+    <button onClick={TopEvent} id="topButton" title={ui.top}>
       <i className="fas fa-hand-point-up" aria-hidden="true"></i>
     </button>
   );

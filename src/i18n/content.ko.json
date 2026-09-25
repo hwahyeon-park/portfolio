@@ -1,0 +1,341 @@
+{
+  "greeting": {
+    "username": "Hwahyeon Park",
+    "title": "안녕하세요, 박화현입니다.",
+    "subTitle": "임베디드·IoT 소프트웨어 엔지니어",
+    "subTitle2": "2년 이상의 실무 경험을 바탕으로 임베디드 기기와 클라우드를 연결하는 IoT 시스템을 개발하고 있습니다. ESP32·STM32 펌웨어와 AWS 서비스를 구현했으며, 300대 이상의 기기가 15초 간격으로 데이터를 전송하는 환경을 지원하도록 설계한 플랫폼 개발에 참여하였습니다.",
+    "subTitle3": "현재는 Newcastle University에서 Embedded Systems and Internet of Things 석사 과정을 이수하고 있습니다. 석사 논문에서는 공개 데이터셋 분석과 Raspberry Pi·ESP32·Azure IoT 실험을 통해 실내 환경 센서 간 관계를 검증하는 프로젝트를 진행 하였습니다.",
+    "displayGreeting": true
+  },
+  "workExperiences": {
+    "display": true,
+    "experience": [
+      {
+        "id": "lenif",
+        "company": "Lenif",
+        "role": "소프트웨어 엔지니어",
+        "date": "2022년 3월 – 2024년 5월",
+        "desc": "서울 · 정규직",
+        "descBullets": [
+          "소프트웨어 엔지니어 2명으로 구성된 팀에서 임베디드 기기부터 AWS 서비스까지 연결하는 IoT 플랫폼을 초기 단계부터 개발했습니다. 300대 이상의 기기가 15초 간격으로 텔레메트리 데이터를 전송하는 환경을 지원하도록 아키텍처를 설계했습니다.",
+          "ESP32/FreeRTOS 및 STM32 펌웨어를 개발하고 BLE, Wi-Fi, MQTT, OTA 업데이트, SPI 통신을 구현했습니다.",
+          "AWS IoT Core, Lambda, EC2, DynamoDB, RDS를 활용해 기기 관리와 텔레메트리 처리를 위한 gRPC·REST 서비스를 개발하고, 플랫폼을 Azure에서 AWS로 이전했습니다.",
+          "펌웨어, BLE/MQTT 통신, AWS 서비스에 걸친 기기 동작을 추적해 연동 문제를 해결하고, 팀원 및 외부 업체와 수정 사항을 조율했습니다."
+        ]
+      },
+      {
+        "id": "swu",
+        "company": "서울여자대학교",
+        "role": "연구원",
+        "date": "2021년 8월 – 2022년 2월",
+        "desc": "서울 · 정규직",
+        "descBullets": [
+          "자율주행 차량 IoT 환경을 위한 System Entity Structure(SES) 기반 보안 프레임워크를 설계하고 시험했습니다.",
+          "IoT 암호화 라이브러리를 개발하고 AsiaSim 2021에서 연구 결과를 발표했습니다."
+        ]
+      },
+      {
+        "id": "brframe",
+        "company": "BRFrame",
+        "role": "프로그램 개발·데이터 분석 인턴",
+        "date": "2019년 7월 – 2020년 2월",
+        "desc": "서울 · 인턴",
+        "descBullets": [
+          "Raspberry Pi, NVIDIA Jetson, Microsoft Vision AI Developer Kit 등 다양한 엣지 컴퓨팅 플랫폼을 Azure IoT에 연결해 센서 데이터를 클라우드로 수집했습니다.",
+          "Azure Kinect DK의 골격 추적 데이터를 분석해 머신러닝 활용 적합성을 평가했습니다."
+        ]
+      }
+    ]
+  },
+  "extraExperience": {
+    "title": "기타 경력 및 활동",
+    "items": [
+      {
+        "id": "lifeengine",
+        "title": "Life Engine — Technical Developer",
+        "subtitle": "2025년 3월 – 2025년 6월 · 서울 · 계약직",
+        "bullets": [
+          "Python 기반 웹 크롤링·데이터 수집 도구를 개발했습니다.",
+          "GitHub Actions로 반복 작업을 자동화하고, 안전한 배포를 위해 HTTPS를 설정했습니다."
+        ],
+        "logoId": "lifeengine"
+      },
+      {
+        "id": "swu",
+        "title": "서울여자대학교 — Develop & Deploy(D&D) 어드바이저",
+        "subtitle": "2018년 7월 – 2019년 6월 / 2020년 4월 – 2020년 7월",
+        "bullets": [
+          "학부생에게 코딩 지도와 인프라 문제 해결 지원을 제공했습니다."
+        ],
+        "logoId": "swu"
+      }
+    ]
+  },
+  "bigProjects": {
+    "title": "프로젝트",
+    "subtitle": "펌웨어, 클라우드, 센서 데이터와 자동화",
+    "display": true,
+    "projects": [
+      {
+        "id": "firmware",
+        "projectName": "임베디드 기기 통신과 펌웨어 개발",
+        "context": "Lenif",
+        "projectDesc": "ESP32/FreeRTOS 및 STM32 펌웨어를 개발하고 BLE, Wi-Fi, MQTT, SPI 통신과 OTA 업데이트를 구현했습니다. 펌웨어와 통신 계층의 동작을 클라우드 서비스까지 추적하며 기기 연동 문제를 해결했습니다.",
+        "technologies": "ESP32 · STM32 · FreeRTOS · BLE · Wi-Fi · MQTT · SPI · OTA"
+      },
+      {
+        "id": "aws",
+        "projectName": "AWS 기반 IoT 백엔드와 클라우드 이전",
+        "context": "Lenif",
+        "projectDesc": "기기 관리와 텔레메트리를 위한 gRPC·REST 서비스를 개발하고 플랫폼을 Azure에서 AWS로 이전했습니다. 300대 이상의 기기가 15초 간격으로 데이터를 전송하는 환경을 지원하도록 설계한 IoT 아키텍처 개발에 참여했습니다.",
+        "technologies": "AWS IoT Core · Lambda · EC2 · DynamoDB · RDS · gRPC · REST"
+      },
+      {
+        "id": "automation",
+        "projectName": "데이터 수집과 반복 작업 자동화",
+        "context": "Life Engine",
+        "projectDesc": "Python으로 웹 크롤링·데이터 수집 도구를 개발하고 GitHub Actions로 반복 작업을 자동화했습니다.",
+        "technologies": "Python · 웹 크롤링 · GitHub Actions · HTTPS"
+      }
+    ]
+  },
+  "skillsSection": {
+    "display": true,
+    "softwareSkills": [
+      {
+        "title": "프로그래밍",
+        "skills": [
+          {
+            "skillName": "C"
+          },
+          {
+            "skillName": "Python"
+          },
+          {
+            "skillName": "Java"
+          },
+          {
+            "skillName": "SQL"
+          }
+        ]
+      },
+      {
+        "title": "임베디드 플랫폼",
+        "skills": [
+          {
+            "skillName": "ESP32"
+          },
+          {
+            "skillName": "STM32"
+          },
+          {
+            "skillName": "FreeRTOS"
+          },
+          {
+            "skillName": "Raspberry Pi"
+          },
+          {
+            "skillName": "Arduino"
+          }
+        ]
+      },
+      {
+        "title": "통신·업데이트",
+        "skills": [
+          {
+            "skillName": "BLE"
+          },
+          {
+            "skillName": "Wi-Fi"
+          },
+          {
+            "skillName": "MQTT"
+          },
+          {
+            "skillName": "SPI"
+          },
+          {
+            "skillName": "OTA"
+          }
+        ]
+      },
+      {
+        "title": "클라우드·백엔드",
+        "skills": [
+          {
+            "skillName": "AWS IoT Core"
+          },
+          {
+            "skillName": "Lambda"
+          },
+          {
+            "skillName": "EC2"
+          },
+          {
+            "skillName": "DynamoDB"
+          },
+          {
+            "skillName": "RDS"
+          },
+          {
+            "skillName": "Azure IoT"
+          },
+          {
+            "skillName": "gRPC"
+          },
+          {
+            "skillName": "REST"
+          },
+          {
+            "skillName": "Datadog"
+          }
+        ]
+      },
+      {
+        "title": "자동화·배포",
+        "skills": [
+          {
+            "skillName": "Python 웹 크롤링·데이터 수집"
+          },
+          {
+            "skillName": "GitHub Actions"
+          },
+          {
+            "skillName": "HTTPS"
+          }
+        ]
+      },
+      {
+        "title": "보안",
+        "skills": [
+          {
+            "skillName": "IoT 보안"
+          },
+          {
+            "skillName": "데이터 암호화"
+          },
+          {
+            "skillName": "보안 통신 프로토콜"
+          }
+        ]
+      },
+      {
+        "title": "센서·데이터",
+        "skills": [
+          {
+            "skillName": "CO₂·PM·VOC 환경 센서"
+          },
+          {
+            "skillName": "센서 검증"
+          },
+          {
+            "skillName": "데이터 품질"
+          },
+          {
+            "skillName": "환경 조건과 교차 민감도 분석"
+          }
+        ]
+      }
+    ]
+  },
+  "educationInfo": {
+    "display": true,
+    "schools": [
+      {
+        "id": "newcastle",
+        "schoolName": "Newcastle University",
+        "subHeader": "MSc Embedded Systems and Internet of Things",
+        "subHeader2": "",
+        "duration": "2025년 9월 – 2026년 9월 졸업 예정 · Newcastle upon Tyne, 영국",
+        "descBullets": [
+          "실내 환경 센서 간 관계 검증을 주제로 석사 논문을 완료했습니다.",
+          "공개 데이터셋 분석과 Raspberry Pi·ESP32·Azure IoT를 활용한 통제 실험을 수행했습니다.",
+          "센서 검증과 데이터 품질을 다루고, 환경 조건 및 교차 민감도가 실제 IoT 측정값에 미치는 영향을 살펴봤습니다."
+        ]
+      },
+      {
+        "id": "swu",
+        "schoolName": "서울여자대학교",
+        "subHeader": "정보보호학 공학사",
+        "subHeader2": "중어중문학 문학사(복수전공)",
+        "duration": "2016년 3월 – 2021년 8월 · 서울",
+        "descBullets": [
+          "학부연구생으로서 IoT 센서 데이터를 보호하기 위한 Android Things 암호화 라이브러리를 개발했습니다.",
+          "카메라·PIR·지문 센서를 결합한 Raspberry Pi 기반 보안 프로토타입을 구현해 센서 기반 자동화와 접근 제어를 수행했습니다.",
+          "학업 성취를 인정받아 SW-Centered 장학금을 비롯한 다수의 학업 장학금을 받았습니다."
+        ]
+      }
+    ]
+  },
+  "researchExperience": {
+    "title": "연구 경험",
+    "items": [
+      {
+        "title": "서울여자대학교 정보보호학과 — 학부연구생",
+        "subtitle": "2018년 6월 – 2020년 5월",
+        "bullets": [
+          "IoT 센서 데이터를 보호하기 위한 Android Things 암호화 라이브러리를 개발했습니다.",
+          "카메라, PIR, 지문 센서를 결합한 Raspberry Pi 기반 보안 프로토타입을 구현해 센서 기반 자동화와 접근 제어를 수행했습니다."
+        ],
+        "logoId": "swu"
+      }
+    ]
+  },
+  "achievementSection": {
+    "display": true,
+    "title": "연구·논문",
+    "subtitle": "석사 학위논문 · 학술논문 · 학회 발표",
+    "achievementsCards": [
+      {
+        "id": "dissertation",
+        "title": "실내 환경 센서 간 관계의 3단계 검증",
+        "subtitle": "Newcastle University 석사 논문",
+        "subtitle2": "공개 데이터셋 분석과 통제된 실험을 통해 실내 환경 센서 간 관계를 검증했습니다. Raspberry Pi, ESP32, Azure IoT를 활용했으며, 환경 조건과 센서의 교차 민감도가 측정값에 미치는 영향을 검토했습니다. \n\n센서 검증 · 데이터 품질 · 환경 센서 · Raspberry Pi · ESP32 · Azure IoT"
+      },
+      {
+        "id": "ses",
+        "title": "SES 기반 자율주행 차량 관제 보안 프레임워크",
+        "subtitle": "자율주행 차량 IoT 환경을 위한 System Entity Structure 기반 보안 프레임워크를 설계·시험했습니다. AsiaSim 2021에서 연구 결과를 발표했으며 관련 논문은 2022년 Springer에 출판되었습니다.",
+        "subtitle2": "논문: “A Study on SES-Based Information Security Framework for Autonomous Vehicle Controlling Environment.”\n\n저자: Hyung-Jong Kim, Hwahyeon Park\n\n출판: Methods and Applications for Modeling and Simulation of Complex Systems, Communications in Computer and Information Science 1636, 2022, pp. 68–73.\n\nDOI: 10.1007/978-981-19-6857-0_7"
+      },
+      {
+        "id": "seed",
+        "title": "SEED 라이브러리를 활용한 Android Things 보안 통신",
+        "subtitle": "IoT 센서 데이터 보호를 위한 Android Things 암호화 라이브러리를 개발했습니다. 관련 논문은 2019년 한국시뮬레이션학회 논문지에 게재되었습니다.",
+        "subtitle2": "논문: “A Study on the Secure Communication at Android Things Environment Using the SEED Library.”\n\n저자: Hwa Hyeon Park, Mi Kyung Yoon, Hyeon Ju Lee, Hae Young Lee, Hyung-Jong Kim\n\n출판: Journal of the Korea Society for Simulation, 28(4), 2019, pp. 67–74.\n\nDOI: 10.9709/JKSS.2019.28.4.067"
+      },
+      {
+        "id": "iss",
+        "title": "IoT 기반 공간 보안 솔루션",
+        "subtitle": "Raspberry Pi에 카메라, PIR, 지문 센서를 통합해 자동화와 접근 제어를 구현한 보안 프로토타입입니다.",
+        "subtitle2": "발표: “IoT-Based Space Security Solution.”\n\n저자: Suji Kim, Hwahyeon Park, Minseok Oh\n\n학회·포스터 발표: ICCT 2018 · 2018년 7월 · 중국 사오싱"
+      }
+    ]
+  },
+  "scholarships": {
+    "title": "장학금",
+    "items": [
+      {
+        "title": "Vice-Chancellor’s International Scholarship 2025",
+        "subtitle": "Newcastle University · £7,000",
+        "description": "학업 성취와 대학원 지원 평가를 바탕으로 선발되는 장학금을 수혜했습니다.",
+        "logoId": "newcastle"
+      },
+      {
+        "title": "서울여자대학교 학업 장학금",
+        "subtitle": "",
+        "description": "SW-Centered 장학금을 포함한 다수의 학업 장학금을 수혜했습니다.",
+        "logoId": "swu"
+      }
+    ]
+  },  
+  "languages": {
+    "title": "사용 언어",
+    "description": "🇰🇷 한국어 · 🇬🇧 영어: 고급 · 🇨🇳 중국어: 중급"
+  },
+  "contactInfo": {
+    "title": "함께 이야기해요",
+    "subtitle": "임베디드·IoT 개발, 클라우드 연동, 센서 데이터 관련해서 이야기하고 싶다면 연락해 주세요.",
+    "email_address": "hwahyeonp25@gmail.com"
+  }
+}

@@ -74,7 +74,10 @@
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: clamp(16px, 1.5vw, 22px);
+  line-height: 1.25;
 }
 
 .experience-roundedimg {
@@ -153,4 +156,8 @@
   .experience-text-desc {
     font-size: 16px;
   }
+}
+
+.experience-text-company {
+  font-size: clamp(16px, 1.5vw, 22px);
 }

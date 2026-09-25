@@ -46,7 +46,7 @@
 }
 .achievement-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 1rem 1rem;
 }
 .certificate-card-footer {
@@ -55,7 +55,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.certificate-card-footer span.certificate-tag {
+.certificate-card-footer .certificate-tag {
   background: $buttonColor;
   color: $lightBackground3;
   vertical-align: middle;
@@ -72,6 +72,16 @@
   cursor: pointer;
   transition: 0.2s ease-in;
 }
-span.certificate-tag:hover {
+.certificate-tag:hover {
   background: $buttonHover;
+}
+
+.publication-copy {
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  line-height: 1.65;
+}
+.certificate-card-footer a {
+  display: inline-block;
+  text-decoration: none;
 }

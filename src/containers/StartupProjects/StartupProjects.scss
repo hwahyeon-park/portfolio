@@ -60,11 +60,11 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 1rem 1rem;
 }
 
-.project-card-footer span.project-tag {
+.project-card-footer .project-tag {
   background: $buttonColor;
   color: $lightBackground3;
   vertical-align: middle;
@@ -87,4 +87,17 @@
     font-size: 16px;
     text-align: center;
   }
+}
+
+.project-context {
+  font-size: 14px;
+  font-weight: 600;
+}
+.project-technologies {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.project-card a.project-tag {
+  display: inline-block;
+  text-decoration: none;
 }

@@ -1,0 +1,84 @@
+@import "../../_globalColor";
+.cv-heading {
+  font-size: 40px;
+  font-weight: 400;
+}
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 24px;
+}
+.cv-card {
+  padding: 24px;
+  border: 1px solid $lightBorder1;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px $lightBoxShadow;
+}
+.cv-card h3 {
+  margin: 0 0 12px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+.cv-card p,
+.cv-card li,
+.cv-section > p {
+  line-height: 1.7;
+}
+.cv-card ul {
+  padding-left: 20px;
+}
+.cv-meta {
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .cv-heading {
+    font-size: 30px;
+  }
+  .cv-card {
+    padding: 20px;
+  }
+}
+
+.cv-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+.cv-heading-copy {
+  min-width: 0;
+}
+.cv-card-heading h3 {
+  overflow-wrap: anywhere;
+}
+.cv-card-heading .cv-meta {
+  margin-bottom: 0;
+}
+.cv-logo-frame {
+  flex: 0 0 100px;
+  height: 84px;
+  background: white;
+  border: 1px solid #dedee5;
+  border-radius: 10px;
+  padding: 6px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cv-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 480px) {
+  .cv-card-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .cv-logo-frame {
+    flex: none;
+    width: 100px;
+  }
+}
