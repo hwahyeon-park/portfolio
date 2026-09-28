@@ -69,7 +69,7 @@
           "Built a Raspberry Pi security prototype integrating camera, PIR and fingerprint sensors for sensor-driven automation and access control."
         ],
         "logoId": "swu"
-      },    
+      },
       {
         "id": "swu",
         "title": "Seoul Women’s University — Develop & Deploy (D&D) Advisor",
@@ -109,7 +109,7 @@
         ]
       }
     ]
-  },  
+  },
   "bigProjects": {
     "title": "Projects",
     "subtitle": "Firmware, cloud services, sensor data and automation",
