@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.83bacaaa.css",
-    "main.js": "/portfolio/static/js/main.8b3179e9.js",
+    "main.js": "/portfolio/static/js/main.64272ebf.js",
     "static/css/487.bb36206c.chunk.css": "/portfolio/static/css/487.bb36206c.chunk.css",
-    "static/js/487.e5913094.chunk.js": "/portfolio/static/js/487.e5913094.chunk.js",
+    "static/js/487.fdd7e198.chunk.js": "/portfolio/static/js/487.fdd7e198.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/portfolio/static/css/990.c6a7ee28.chunk.css",
-    "static/js/990.618e789a.chunk.js": "/portfolio/static/js/990.618e789a.chunk.js",
+    "static/js/990.038d7ac4.chunk.js": "/portfolio/static/js/990.038d7ac4.chunk.js",
     "static/media/server.png": "/portfolio/static/media/server.d3801578313103dce87b.png",
+    "static/media/system_architecture_eng.png": "/portfolio/static/media/system_architecture_eng.89e2a031f727d3bac6a2.png",
     "static/media/AsiaSim.png": "/portfolio/static/media/AsiaSim.89ab37c9f33df1a9e097.png",
     "static/media/newcastle-university.png": "/portfolio/static/media/newcastle-university.495acf6cb687ea96d1d7.png",
     "static/media/esp-iot.png": "/portfolio/static/media/esp-iot.7049ce73418c06919c1f.png",
@@ -24,14 +25,14 @@
     "index.html": "/portfolio/index.html",
     "static/media/talksCardBack.svg": "/portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.83bacaaa.css.map": "/portfolio/static/css/main.83bacaaa.css.map",
-    "main.8b3179e9.js.map": "/portfolio/static/js/main.8b3179e9.js.map",
+    "main.64272ebf.js.map": "/portfolio/static/js/main.64272ebf.js.map",
     "487.bb36206c.chunk.css.map": "/portfolio/static/css/487.bb36206c.chunk.css.map",
-    "487.e5913094.chunk.js.map": "/portfolio/static/js/487.e5913094.chunk.js.map",
+    "487.fdd7e198.chunk.js.map": "/portfolio/static/js/487.fdd7e198.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/portfolio/static/css/990.c6a7ee28.chunk.css.map",
-    "990.618e789a.chunk.js.map": "/portfolio/static/js/990.618e789a.chunk.js.map"
+    "990.038d7ac4.chunk.js.map": "/portfolio/static/js/990.038d7ac4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.83bacaaa.css",
-    "static/js/main.8b3179e9.js"
+    "static/js/main.64272ebf.js"
   ]
 }
