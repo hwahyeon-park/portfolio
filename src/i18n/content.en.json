@@ -3,8 +3,8 @@
     "username": "Hwahyeon Park",
     "title": "Hi, I’m Hwahyeon Park.",
     "subTitle": "Embedded & IoT Software Engineer",
-    "subTitle2": "I build IoT systems that connect embedded devices with cloud services, drawing on over two years of professional experience. I have developed ESP32/STM32 firmware and AWS services for a platform designed to support more than 300 devices reporting telemetry at 15-second intervals.",
-    "subTitle3": "I am currently completing an MSc in Embedded Systems and Internet of Things at Newcastle University. My dissertation validated relationships between indoor environmental sensors through public-dataset analysis and experiments using Raspberry Pi, ESP32 and Azure IoT.",
+    "subTitle2": "I develop and integrate IoT systems across embedded firmware, device connectivity and cloud services. With over two years of professional experience, I have developed ESP32/STM32 firmware and AWS-based backend services, and resolved integration issues across embedded, communication and cloud layers.",
+    "subTitle3": "I hold an MSc in Embedded Systems and Internet of Things (Distinction) from Newcastle University. My dissertation investigated indoor environmental sensor relationships and data reliability through public-dataset analysis and practical experiments.",
     "displayGreeting": true
   },
   "workExperiences": {
@@ -87,13 +87,14 @@
       {
         "id": "newcastle",
         "schoolName": "Newcastle University",
-        "subHeader": "MSc Embedded Systems and Internet of Things",
+        "subHeader": "MSc Embedded Systems and Internet of Things - Distinction",
         "subHeader2": "",
-        "duration": "September 2025 – September 2026 (expected) · Newcastle upon Tyne, United Kingdom",
+        "duration": "September 2025 – September 2026 · Newcastle upon Tyne, United Kingdom",
         "descBullets": [
           "Completed a dissertation validating relationships between indoor environmental sensors.",
           "Conducted public-dataset analysis and controlled experiments using Raspberry Pi, ESP32 and Azure IoT.",
-          "Examined sensor validation and data quality, including how environmental conditions and cross-sensitivity affect real-world IoT measurements."
+          "Examined sensor validation and data quality, including how environmental conditions and cross-sensitivity affect real-world IoT measurements.",
+          "Awarded the Vice-Chancellor's International Scholarship 2025 (£7,000)."
         ]
       },
       {
