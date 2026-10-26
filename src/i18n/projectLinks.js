@@ -6,7 +6,7 @@ export const projectLinks = {
   laundry: {
     ko: "https://therapeutic-act-3bf.notion.site/ESP32-Azure-4018c83478538026a334c6aabd3ac6ec?source=copy_link",
     en: "https://therapeutic-act-3bf.notion.site/Laundry-Completion-Notification-System-Using-ESP32-and-Azure-4038c834785380748742d0143000fb79?source=copy_link"
-  },  
+  },
   firmware: {
     ko: "https://therapeutic-act-3bf.notion.site/AWS-IoT-ESP32-13a8c834785381b492ecfabfadc46d2e?pvs=4",
     en: "https://therapeutic-act-3bf.notion.site/ESP32-Firmware-Development-and-AWS-IoT-Integration-3e58c83478538053a626c6560de788f0?pvs=73"

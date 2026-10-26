@@ -69,7 +69,7 @@
           "Built a Raspberry Pi security prototype integrating camera, PIR and fingerprint sensors for sensor-driven automation and access control."
         ],
         "logoId": "swu"
-      },    
+      },
       {
         "id": "swu",
         "title": "Seoul Women’s University — Develop & Deploy (D&D) Advisor",
@@ -110,7 +110,7 @@
         ]
       }
     ]
-  },  
+  },
   "bigProjects": {
     "title": "Projects",
     "subtitle": "Firmware, cloud services, sensor data and automation",
@@ -122,7 +122,7 @@
         "context": "Personal Project",
         "projectDesc": "No more trips to check whether the laundry is done — I built a system that sends an SMS automatically when a washing or drying cycle finishes.Using an ESP32 and a vibration sensor, the system monitors an existing washing machine without modifying it. The project brings together automatic cycle completion detection, real-time web monitoring and personalised SMS notifications through an end-to-end IoT system built on Azure.",
         "technologies": "ESP32 · FreeRTOS · MPU6050 · MQTT/TLS · Azure IoT Hub · Azure Functions · Blob / Table Storage · Python · Flask · TextBee"
-      },      
+      },
       {
         "id": "firmware",
         "projectName": "Embedded Firmware and Device Communication",
