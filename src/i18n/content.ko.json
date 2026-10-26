@@ -39,7 +39,7 @@
         "company": "BRFrame",
         "role": "프로그램 개발·데이터 분석 인턴",
         "date": "2019년 7월 – 2020년 2월",
-        "desc": "서울 · 인턴",
+        "desc": "서울 · 풀타임 인턴",
         "descBullets": [
           "Raspberry Pi, NVIDIA Jetson, Microsoft Vision AI Developer Kit 등 다양한 엣지 컴퓨팅 플랫폼을 Azure IoT에 연결해 센서 데이터를 클라우드로 수집했습니다.",
           "Azure Kinect DK의 골격 추적 데이터를 분석해 머신러닝 활용 적합성을 평가했습니다."
@@ -76,6 +76,13 @@
     "subtitle": "펌웨어, 클라우드, 센서 데이터와 자동화",
     "display": true,
     "projects": [
+      {
+        "id": "laundry",
+        "projectName": "ESP32와 Azure를 활용한 세탁 완료 알림 시스템",
+        "context": "Personal Project",
+        "projectDesc": "세탁이 끝났는지 확인하러 갈 필요 없이, 완료되면 알아서 문자로 알려주는 시스템을 만들었습니다. ESP32와 진동 센서로 기존 세탁기를 개조하지 않고 작동 상태를 감지하며, Azure 기반 자동 완료 판단, 실시간 모니터링, 사용자별 SMS 알림까지 구현한 엔드투엔드 IoT 프로젝트입니다.",
+        "technologies": "ESP32 · FreeRTOS · MPU6050 · MQTT/TLS · Azure IoT Hub · Azure Functions · Blob / Table Storage · Python · Flask · TextBee"
+      },        
       {
         "id": "firmware",
         "projectName": "임베디드 기기 통신과 펌웨어 개발",
@@ -328,7 +335,7 @@
         "logoId": "swu"
       }
     ]
-  },
+  },  
   "languages": {
     "title": "사용 언어",
     "description": "🇰🇷 한국어 · 🇬🇧 영어: 고급 · 🇨🇳 중국어: 중급"

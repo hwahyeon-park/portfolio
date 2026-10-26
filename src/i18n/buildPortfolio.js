@@ -17,6 +17,7 @@ const images = {
   lenif: require("../assets/images/lenif-logo.png"),
   swu: require("../assets/images/swuLogo.jpg"),
   brframe: require("../assets/images/brframe_logo.png"),
+  laundry: require("../assets/images/system_architecture_eng.png"),
   firmware: require("../assets/images/esp-iot.png"),
   aws: require("../assets/images/server.png"),
   ses: require("../assets/images/AsiaSim.png"),
